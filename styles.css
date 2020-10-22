@@ -9,3 +9,95 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+/*Laying out the Nav Bar*/
+
+header .container{
+    /*Flex container for the header*/
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1{
+    margin-right:25%;
+}
+nav ul {
+    /*Allow nav bar to be displayed horizontally*/
+    display:flex;
+    justify-content: space-around;
+    width:50%;
+    list-style-type: none;
+    margin-left:10%;
+}
+
+nav ul a{
+    text-decoration: none;
+    padding:5px;
+}
+
+
+/*Laying out the Hero Overview Section*/
+
+.overview-hero .container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:30px;
+}
+.overview-hero-image img{
+    height:40vh;
+    margin-right:70px;
+}
+
+/*Laying out the Learn About Section*/
+.cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5vw;
+}
+
+.card img{
+    height:35vh;
+}
+
+/*
+.card:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.card:nth-child(2){
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.card:nth-child(3){
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+*/
+/*Laying out the articles*/
+article{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:20px;
+}
+
+article img{
+    height:30vh;
+    width: 35vh;
+    border-radius: 100%;
+    margin-right:30px;
+}
+
+/*Laying out the news letter area*/
+.newsletter .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display:flex;
+}
