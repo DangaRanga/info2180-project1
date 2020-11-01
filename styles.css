@@ -16,8 +16,10 @@ header{
 }
 .container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 80%;
+    /*
     width: 100%;
+    **/
 }
 
 /*Laying out the Nav Bar*/
@@ -30,7 +32,7 @@ header .container{
 }
 
 header h1{
-    margin-right:25%;
+    margin: 2% 7%;
 }
 nav ul {
     /*Allow nav bar to be displayed horizontally*/
@@ -43,6 +45,7 @@ nav ul {
 
 header li a{
     text-decoration: none;
+    font-weight: bold;
     padding:5px;
     color:#6b7280;
 }
@@ -54,18 +57,20 @@ header li a:hover{
 
 /*Laying out the Hero Overview Section*/
 
-.overview-hero{
-    background-color: #E2E8F0;
+.overview-hero p{
+    width:30vw;
 }
+
 .overview-hero .container{
+    background-color: #E2E8F0;
     display:flex;
     justify-content: space-around;  
     align-items: center;
-    padding:30px;
+    padding:35px;
 }
 .overview-hero-image img{
-    height:40vh;
-    margin-right:70px;
+    height:30vh;
+    margin-left: 100px;
 }
 
 /*Styling the Testing section*/
@@ -80,7 +85,12 @@ header li a:hover{
     padding: 20vh 4vw;
 }
 
-.testing p, h2{
+.testing p{
+    width:40vw;
+    margin-left:10vw;
+}
+
+.testing h2{
     width:40vw;
     margin-left:10vw;
 }
@@ -102,8 +112,10 @@ header li a:hover{
 }
 /*Laying out the Learn About Section*/
 
-.learn-about{
+.learn-about .container{
+    align-items: center;
     justify-items: center;
+    width:70%;
 }
 .learn-about .container h2{
     margin-top: 20px;
@@ -121,33 +133,49 @@ header li a:hover{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 1vw;
     margin-top: 30px;
-    
-
 }
 
 .card{
-    padding:12px;
+    display:flex;
+    flex-direction: column;
+    padding:30px;
     border-style:solid;
     border-color:#e2e8f0;
     border-radius:5px;
     box-shadow: 0px 5px 10px #e2e8f0;
+    align-items: center;
+    
 }
 .card img{
-    height:30vh;
+    height:27vh;
+    margin:auto;
 }
 
 
 /*Laying out the articles*/
 
 .stories {
-    padding: 0 20vw;
-    display: flex;
+    padding: 0 40px;
     justify-items: center;
 }
+
+.stories h2{
+    margin-bottom: 25px;
+}
+
+.stories h3{
+    margin-bottom: 25px;
+}
+
+.stories p {
+    margin-top: 25px;
+}
+
 article{
     display:flex;
     justify-content: space-around;
     margin-bottom:20px;
+    padding-right:50px;
 }
 
 article img{
@@ -223,7 +251,7 @@ footer p{
 }
 
 input[type=email]{
-    padding:12px 20px;
+    padding:12px 40px;
     box-sizing: border-box;
     border:none;
     border-radius: 5px;
